@@ -1,20 +1,4 @@
-<?php
-include_once 'autoload.php';
 
-$db = new database();
-$usuario = new user();
-$categoria = new caregory();
-$produto = new product();
-$sale = new sale();
-
-//$usuario->add('jef', 'jeferson@eu.com', '123456', $db);
-
-#
-
-
-//$categoria->add();
-
-?>
 
 
 <html>

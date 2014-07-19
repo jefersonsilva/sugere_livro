@@ -1,8 +1,35 @@
-<?php
+<?php include 'index.php'; ?>
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
+<br>
+
+
+<table border="1">
+    <th>Nome</th>
+    <th>Email</th>
+<?php
+include 'autoload.php';
+
+$user = new user();
+$obj = new database();
+
+$usuarios = $user->list_user($obj);
+
+foreach ($usuarios as $pessoa):
+?>
+
+    <tr>
+        <td>
+            <?php echo $pessoa['name'] ?>
+        </td>
+        <td>
+            <?php echo $pessoa['username'] ?>
+        </td>
+    </tr>
+
+
+
+<?php endforeach; ?>
+
+</table>
 
