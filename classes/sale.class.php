@@ -12,6 +12,9 @@ class sale{
     function add($users_id,$product_id, $obj ){
         $sql_insere = "insert into sales(users_id,products_id)
                  values ('".$users_id. "', '". $product_id. "')";
+        
+        
+        
         $obj->executeSql($sql_insere);
         
         //echo $sql_insere;
