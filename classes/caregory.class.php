@@ -26,9 +26,9 @@ class caregory {
           
          
     }
-    function list_user($obj){
+    function list_categories($obj){
         
-        $sql_users = "select * from users";
+        $sql_users = "select * from category";
         return $obj->executeSql($sql_users);
     }
 }

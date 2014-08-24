@@ -21,15 +21,15 @@ session_set_cookie_params('36000','/','.jefersonsilva.in');
 
 define('USEDB','Mysql');
 
-define('DATABASE','jefersonsi3_2');
-define('HOST','dbmy0020.whservidor.com');
-define('USER','jefersonsi3_2');
-define('PASSWORD','C2ea4a88');
+define('DATABASE','sugere_livro');
+define('HOST','localhost');
+define('USER','root');
+define('PASSWORD','U.jK9ne5');
 
 
 function __autoload($className){
     
-    $CLASSPATH = '/home/jefersonsi3/public_html/projetos/tcc/classes/';
+    $CLASSPATH = '/home/jefersonsilva/public_html/projetos/tcc/classes/';
     $FILENAME = $CLASSPATH.$className.".class.php";
     if(file_exists($FILENAME)){
         

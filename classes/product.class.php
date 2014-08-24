@@ -18,7 +18,10 @@ class product{
     }
     function list_product($obj){
         
-        $sql_users = "select * from products";
+        $sql_users = "select P.name as produto, "
+                    ."C.name as categoria "
+                    . "from products P "
+                    . "inner join category C on(P.category_id = C.id)";
         return $obj->executeSql($sql_users);
     }
     function list_product_by_category($pontos_clientes,$obj){
