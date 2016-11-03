@@ -22,9 +22,9 @@ session_set_cookie_params('36000','/','.jefersonsilva.in');
 define('USEDB','Mysql');
 
 define('DATABASE','sugere_livro');
-define('HOST','localhost');
-define('USER','root');
-define('PASSWORD','U.jK9ne5');
+define('HOST','******');
+define('USER','*****8');
+define('PASSWORD','******');
 
 
 function __autoload($className){
